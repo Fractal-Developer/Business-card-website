@@ -1,0 +1,681 @@
+@font-face {
+    font-family: "HelveticaNeueLTProLt";
+    src: url(../fonts/HelveticaNeueLTProLt.otf) format("opentype");
+}
+
+@font-face {
+    font-family: "HelveticaNeueLTProMd";
+    src: url(../fonts/HelveticaNeueLTProMd.otf);
+}
+
+@font-face {
+    font-family: "HelveticaNeueLTProRoman";
+    src: url(../fonts/HelveticaNeueLTProRoman.otf);
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url(../fonts/Roboto-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat-Light";
+    src: url(../fonts/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Merriweather-LightItalic";
+    src: url(../fonts/Merriweather-LightItalic.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    min-width: 1020px;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.menu_desktop {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu_item a {
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 13px;
+    line-height: 17px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    color: #989696;
+    margin-right: 43px;
+    text-decoration: none;
+}
+
+.menu_item:last-child a {
+    margin-right: 0px;
+    /* Убираем правый отступ с последнего элемента */
+}
+
+.menu_mobile {
+    display: none;
+}
+
+.active a {
+    color: #010101;
+}
+
+.logo {
+    margin: 0 16px;
+}
+
+.header_content {
+    text-align: center;
+}
+
+.header_title {
+    font-family: 'HelveticaNeueLTProMd', sans-serif;
+    font-size: 44px;
+    line-height: 41px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #1d1e1f;
+    padding-top: 207px;
+    margin: 0x auto 4px;
+}
+
+.header_text {
+    font-family: "Merriweather-LightItalic", serif;
+    font-size: 16px;
+    line-height: 17px;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 0.03em;
+    color: #898888;
+    margin: 0 auto 43px;
+}
+
+.header_button {
+    font-family: "Montserrat-Regular", sans-serif;
+    font-size: 13px;
+    line-height: 17px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    color: #000000;
+    text-decoration: none;
+    width: 188px;
+    height: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 206px;
+}
+
+.about {
+    height: 1129px;
+    padding-top: 128px;
+    padding-bottom: 271px;
+    background: url("../img/buildings_white.png") center 101% repeat-x,
+        url("../img/buildings_black.png") center 101% repeat-x,
+        #474747;
+}
+
+.about_inner {
+    display: grid;
+    grid-template-rows: max-content max-content;
+    grid-template-columns: max-content max-content;
+    gap: 80px;
+    justify-content: center;
+    place-content: center center;
+}
+
+.about_team {
+    width: 417px;
+    height: 276px;
+    background-color: #181818;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.about_year {
+    font-family: "Montserrat-Light", sans-serif;
+    font-size: 48px;
+    line-height: 26px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #fefefe;
+    margin-bottom: 27px;
+}
+
+.about_text {
+    font-family: "Montserrat-Light", sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    color: #b7b7b7;
+}
+
+/* Вторая страница - Команда */
+
+.team {
+    height: 745px;
+}
+
+.block_head {
+    text-align: center;
+}
+
+.block_title {
+    font-family: 'HelveticaNeueLTProMd', sans-serif;
+    font-size: 34px;
+    line-height: 26px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #1d1e1f;
+    margin: 0px;
+    padding-top: 138px;
+    margin-bottom: 13px;
+}
+
+.block_text {
+    font-family: "Merriweather-LightItalic", sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 0.02em;
+    color: #898888;
+    margin: 0px;
+}
+
+.team_inner {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 127px;
+}
+
+.team_item {
+    text-align: center;
+    width: 226px;
+}
+
+.team_item-img {
+    margin-bottom: 28px;
+}
+
+.team_item-title {
+    font-family: "HelveticaNeueLTProLt", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #464646;
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+.team_item-text {
+    font-family: "HelveticaNeueLTProLt";
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #b3b3b3;
+    margin: 0px;
+    margin-top: 21;
+}
+
+.team_icon-box a {
+    font-size: 20px;
+    color: #e4e4e4;
+    transition: 0.3s;
+}
+
+.team_icon-box a:hover {
+    color: #464646;
+}
+
+/* Третья страница */
+
+.provide {
+    background-color: #181818;
+    padding-bottom: 155px;
+}
+
+.iverse .block_title {
+    color: #ffffff;
+    padding-top: 176px;
+}
+
+.iverse .block_text {
+    color: #777777;
+}
+
+.provide_inner {
+    display: flex;
+    padding-top: 138px;
+    justify-content: space-between;
+}
+
+.provide_item {
+    text-align: center;
+}
+
+.container_provide_item-img {
+    /* border: rgb(218, 69, 32) solid 1px; */
+    position: relative;
+    margin-bottom: 43px;
+}
+
+.provide_item-img2 {
+    position: absolute;
+    top: calc(50% - 27px);
+    left: calc(50% - 32px);
+}
+
+.provide_item-img3 {
+    position: absolute;
+    top: calc(50% - 63px/2);
+    left: calc(50% - 73px/2);
+}
+
+.provide_item-img4 {
+    position: absolute;
+    top: calc(50% - 55px/2);
+    left: calc(50% - 64px/2);
+}
+
+.provide_item-title {
+    color: #ffffff;
+    font-family: "HelveticaNeueLTProLt", sans-serif;
+    font-size: 26px;
+    line-height: 26px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    margin: 0px;
+    margin-bottom: 31px;
+}
+
+.provide_item-text {
+    color: #383838;
+    font-family: "HelveticaNeueLTProLt", sans-serif;
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    margin: 0px;
+}
+
+/* Четвртая страница - контакт */
+
+.block_title {
+    padding-top: 95px;
+}
+
+.contact_icon-box {
+    display: flex;
+    padding-top: 64px;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.contact_item {
+    text-align: center;
+    width: 160px;
+}
+
+.contact_item #mail {
+    padding-bottom: 4px;
+    padding-top: 4px;
+}
+
+.contact_text {
+    font-family: "HelveticaNeueLTProLt", sans-serif;
+    font-size: 12px;
+    line-height: 26px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #898888;
+    margin-bottom: 12px;
+}
+
+.contact_text a {
+    text-decoration: none;
+    font-family: "HelveticaNeueLTProLt", sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #898888;
+    transition: 0.3s;
+}
+
+.contact_text a:hover {
+    color: #242424;
+    text-decoration: underline;
+}
+
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 153px 0 15px;
+}
+
+.contact_form input {
+    height: 52px;
+    padding: 20px;
+    font-family: 'HelveticaNeueLTProLt', sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.02em;
+    color: #898888;
+    text-align: center;
+    border: 1px solid #999999;
+}
+
+.text {
+    margin-bottom: 20px;
+}
+
+.email {
+    margin-bottom: 20px;
+}
+
+.number {
+    margin-bottom: 20px;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    /* Убирает стрелки на числовом поле */
+}
+
+.contact_textarea {
+    margin-bottom: 21px;
+    height: 195px;
+    resize: none;
+    font-family: 'HelveticaNeueLTProMd', sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #898888;
+    padding: 22px;
+}
+
+.contact_form .contact_button {
+    background-color: #161616;
+    font-family: 'HelveticaNeueLTProLt', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #fefefe;
+    border: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    font-family: 'HelveticaNeueLTProMd', sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #3b3b3b;
+    padding-top: 154px;
+}
+
+/* --------------------------------------------------------- 1020px ---------------------------------------------------------- */
+
+@media (max-width: 1020px) {
+
+    .container {
+        min-width: 376px;
+        height: auto;
+    }
+
+    .about {
+        height: auto; /* Чтоб квадраты с годами умещались по высоте */
+        padding-bottom: 200px; /* Уменьшаем нижний отступ */
+    }
+
+    .about_inner {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: max-content;
+    }
+
+    .team_inner {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 100px;
+    }
+
+    .team {
+        padding-bottom: 80px;
+        height: auto;
+    }
+
+    .team_item {
+        margin-bottom: 30px;
+    }
+
+    .provide .block_title {
+        padding-top: 100px;
+
+    }
+
+    .provide_inner {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 70px;
+    }
+
+    .provide_item {
+        margin: 0 40px 40px;
+        width: 200px;
+    }
+
+    .provide_item-title {
+        margin-bottom: 15px;
+    }
+    
+    .container_provide_item-img {
+        margin-bottom: 20px;
+        
+    }
+
+    .provide {
+        padding-bottom: 90px;
+       
+    }
+
+    .contact_item {
+        min-width: 200px;
+    }
+
+    .contact_form {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 90px 0 15px;
+    }
+
+    footer {
+        padding-top: 90px;
+    }
+}
+
+/* --------------------------------------------------------- 664px ---------------------------------------------------------- */
+
+@media screen and (max-width: 664px) {
+    .container {
+        min-width: 374px;
+    }
+
+    .logo {
+        margin: 0 -15px;
+    }
+
+    .menu_desktop {
+        display: none;
+    }
+
+    .menu_inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .menu_mobile {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .menu {
+        display: none;
+        text-align: center;
+        list-style: none;
+        padding: 15px 0;
+    }
+
+    .menu a {
+        margin: 0;
+    }
+
+    .menu li {
+        padding: 15px 0;
+    }
+
+    .menu_burger {
+        display: block;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        width: 40px;
+        height: 40px;
+        background-color: #000;
+        position: relative;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .menu_burger span {
+        display: block;
+        position: absolute;
+        background-color: #fff;
+        height: 4px;
+        width: 30px;
+        top: 18px;
+        left: 5px;
+        right: 5px;
+        transition: background 0s 0.3s ;
+    }
+
+    .menu_burger.close span {
+    background: none;
+    }
+
+    .menu_burger span:before,
+    .menu_burger span:after {
+        display: block;
+        position: absolute;
+        background-color: #fff;
+        height: 4px;
+        width: 100%;
+        content: '';
+        transition-duration: 0.3s, 0.3s;
+        transition-delay: 0.3s, 0s;
+    }
+
+    .menu_burger span:after {
+        top: -10px;
+    }
+
+    .menu_burger span:before {
+        bottom: -10px;
+    }
+    
+    .menu_burger.close span:after {
+        top: 0px;
+        transform: rotate(45deg);
+    }
+
+    .menu_burger.close span:before {
+        bottom: 0px;
+        transform: rotate(-45deg);
+    }
+    
+    .header_title {
+        padding-top: 100px;
+        margin-bottom: 30px;
+    }
+
+    .header_button {
+        margin: 0 auto 100px;
+    }
+
+    .about_team {
+        max-width: 340px;
+    }
+
+    .team_inner {
+        flex-wrap: wrap;
+        padding-top: 100px;
+    }
+
+    .team {
+        padding-bottom: 80px;
+        height: auto;
+    }
+
+    .team_item {
+        width: 340px;
+        margin-bottom: 30px;
+    }
+
+    .contact_item {
+        margin-bottom: 20px;
+        width: auto;
+    }
+
+    .contact_form {
+        padding-top: 30px;
+    }
+
+    .contact_icon-box {
+        display: flex;
+        flex-direction: column;
+        padding-top: 35px;
+    }
+
+    .contact .block_title {
+        padding-top: 80px;
+    }
+
+    footer {
+        min-width: 375px;
+        padding-top: 30px;
+    }
+}
